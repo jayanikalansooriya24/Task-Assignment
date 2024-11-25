@@ -3,7 +3,6 @@ import facebookIcon from '../assets/facebook.png';
 import instagramIcon from '../assets/inster.png';
 import linkedinIcon from '../assets/link.png';
 import '../styles/Home.css';
-import { Link } from 'react-router-dom';
 
 const Home = () =>{
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,11 +16,11 @@ const Home = () =>{
     <div className="container">
       <header className="navbar">
         <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-          <a href="#">Products</a>
-          <a href="#">Services</a>
-          <a href="#">Careers</a>
+            <a href="/">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">Careers</a>
         </div>
         <div className="info">
           <a href="#" className="gallery">Gallery</a>
@@ -56,7 +55,7 @@ const Home = () =>{
 
       <footer className="footer">
         <div className="footer-links">
-          <Link to="/About">About</Link>
+          <a href="#">About</a>
           <a href="#">News</a>
           <a href="#">Privacy policy</a>
           <a href="#">Terms of service</a>
