@@ -1,0 +1,257 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial, sans-serif'; /* Use a clean, modern font */
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 10; /* Ensure it stays above other content */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a, .info a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .nav-links a:hover, .info a:hover {
+    color: #f0a500; /* Add a hover color */
+  }
+  
+  .info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .gallery {
+    font-weight: bold;
+  }
+  
+  /* Hamburger Menu Icon */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-menu:hover .bar {
+    background-color: #f0a500; /* Change color on hover */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    right: 50px; /* Align with the hamburger icon */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #555; /* Highlight menu option */
+    border-radius: 4px;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%; /* Take full height of the viewport */
+  }
+  
+  .text-content {
+    background: url('../assets/12.avif') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    align-items: left; /* Align text to the left */
+    text-align: left; /* Align text to the left */
+    padding: 50px;
+    color: white; /* Text color */
+    gap: 15px; /* Space between text elements */
+  }
+  
+  .text-content .tagline {
+    font-size: 1.5rem; /* Smaller font for tagline */
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 10px;
+  }
+  
+  .text-content .title {
+    font-size: 20rem; /* Large font size for title */
+    font-weight: bold; /* Bold font for emphasis */
+    line-height: 1.1; /* Slightly tighter line height */
+    margin: 0;
+  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for better visibility */
+  }
+  
+  .text-content .description {
+    font-size: 2.0rem; /* Medium font size for the description */
+    line-height: 1.5;
+    margin-top: 10px; /* Add space above the description */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+  }
+  
+  .text-content .Product {
+    font-size: 2.0rem; /* Medium font size for the description */
+    line-height: 1.5;
+    margin-top: 10px; /* Add space above the description */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+  }
+  
+  
+  .image-content {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow for background image */
+  }
+  
+  .background-image {
+    background-image: url('../assets/13.jpeg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.9); /* Slightly darken the image for better contrast with text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+      grid-template-columns: 1fr; /* Stack sections vertically */
+    }
+  
+    .navbar {
+      padding: 15px 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .text-content {
+      padding:10px;
+      align-items: center;
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .text-content .title {
+      font-size: 8rem; /* Adjust font size for smaller screens */
+    }
+  
+    .text-content .description {
+      font-size: 1.4rem;
+    }
+  
+    .nav-links {
+      display: none; /* Hide main links for mobile view */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-content .title {
+      font-size: 6rem; /* Further adjust font size for smaller devices */
+    }
+  
+    .text-content .description {
+      font-size: 1.2rem;
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between; /* Space between links and social icons */
+    align-items: center;
+    background-color: rgb(61, 60, 60);
+    color: white;
+    text-align: left;
+    padding: 20px 50px;
+    width: 100%;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    margin-bottom: 20px; /* Space above social icons */
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-links a:hover {
+    color: #f0a500; /* Highlight link on hover */
+  }
+  
+  .footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between social icons */
+  }
+  
+  .footer-social-links img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    filter: invert(1); /* Make icons white if they're black */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-social-links img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
