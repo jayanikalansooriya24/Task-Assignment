@@ -7,6 +7,27 @@ import video1 from "../assets/1.mp4"; // Path to video 1
 import video2 from "../assets/2.mp4"; // Path to video 2
 import video3 from "../assets/3.mp4"; // Path to video 3
 
+import androidLogo from "../assets/android.png";
+import figmaLogo from "../assets/figma.png";
+import htmlLogo from "../assets/html.webp";
+import javaLogo from "../assets/java.webp";
+import microsoftLogo from "../assets/micro.png";
+import mongoLogo from "../assets/mongo.png";
+import nodeLogo from "../assets/node.png";
+import reactLogo from "../assets/react.png";
+import sqlLogo from "../assets/sql.png";
+import cPlusPlusLogo from "../assets/c++.jpeg";
+import cssLogo from "../assets/css.webp";
+import githubLogo from "../assets/github.jpg";
+import jiraLogo from "../assets/jira.jpeg";
+import jsLogo from "../assets/js.webp";
+
+import instagramIcon from "../assets/inster.png";
+import linkedinIcon from "../assets/link.png";
+import githubIcon from "../assets/git.png";
+import discordIcon from "../assets/dis.png";
+
+
 function Home() {
   return (
     <div>
@@ -17,16 +38,16 @@ function Home() {
             src={logo}
             alt="Logo"
             style={{
-              width: "50px",
-              height: "50px",
+              width: "55px",
+              height: "55px",
               marginRight: "10px",
             }}
           />
         </div>
         <div className="nav-links">
           <a href="#home">Home</a>
-          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
         <a
@@ -39,7 +60,7 @@ function Home() {
           <button
             style={{
               padding: "10px 20px",
-              backgroundColor: "#4CAF50",
+              backgroundColor:  "#4c8baf",
               color: "white",
               border: "none",
               borderRadius: "5px",
@@ -58,11 +79,12 @@ function Home() {
         </div>
         <div className="hero-right">
           <h1>Hi, I'm Jayani</h1>
-          <h3>IT Undergraduate at SLIIT specializing in Information Technology</h3>
+          <h3>IT Undergraduate at SLIIT <br></br>Specializing in Information Technology</h3>
           <p>
-            I am an IT undergraduate specializing in mobile development, backend
+            I am an IT undergraduate specializing in mobile development,<br></br> backend
             development, and UI/UX design. Fluent in English and passionate
             about creating user-friendly and functional applications.
+            
           </p>
         </div>
       </div>
@@ -109,21 +131,98 @@ efficiency</p>
         
       </section>
 
+     
       {/* Skills Section */}
       <section id="skills" style={{ marginBottom: "30px" }}>
         <h2>Skills</h2>
-        <p>
-          Java, JavaScript, CSS, React, MongoDB, Android Studio, Figma, HTML,
-          PHP, C++, GitHub, Microsoft 365, Node.js, SQL
-        </p>
-      </section>
+        <div className="skills-container">
+          <br></br> <br></br>
 
-      {/* Contact Section */}
-      <footer id="contact" style={{ textAlign: "center", marginTop: "30px" }}>
-        <h2>Connect with Me</h2>
-        <p>Email: jayanikalansooriya24@gmail.com</p>
-        <p>Phone: 0761262607</p>
-      </footer>
+          <div className="skill-card">
+            <img src={androidLogo} alt="Android Studio" className="skill-logo" />
+            <p>Android Studio</p>
+          </div><br></br><br></br> <br></br><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={figmaLogo} alt="Figma" className="skill-logo" />
+            <p>Figma</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={htmlLogo} alt="HTML" className="skill-logo" />
+            <p>HTML</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={cssLogo} alt="CSS" className="skill-logo" />
+            <p>CSS</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={javaLogo} alt="Java" className="skill-logo" />
+            <p>Java</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={jsLogo} alt="JavaScript" className="skill-logo" />
+            <p>JavaScript</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={microsoftLogo} alt="Microsoft 365" className="skill-logo" />
+            <p>Microsoft 365</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={mongoLogo} alt="MongoDB" className="skill-logo" />
+            <p>MongoDB</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={nodeLogo} alt="Node.js" className="skill-logo" />
+            <p>Node.js</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={reactLogo} alt="React" className="skill-logo" />
+            <p>React</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={sqlLogo} alt="SQL" className="skill-logo" />
+            <p>SQL</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={cPlusPlusLogo} alt="C++" className="skill-logo" />
+            <p>C++</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={githubLogo} alt="GitHub" className="skill-logo" />
+            <p>GitHub</p>
+          </div><br></br><br></br> <br></br>
+          <div className="skill-card">
+            <img src={jiraLogo} alt="Jira" className="skill-logo" />
+            <p>Jira</p>
+          </div><br></br><br></br> <br></br>
+        </div>
+      </section>
+      <br></br><br></br> <br></br>
+      <footer id="contact">
+  <div className="footer-content">
+    <h2>Connect with Me</h2>
+    <h3>Let's work together and create something amazing!</h3>
+    <p>Email: jayanikalansooriya24@gmail.com</p>
+    <p>Phone: 0761262607</p>
+  </div>
+  <div className="footer-social">
+    <h2>Follow me on</h2>
+    <div className="social-icons">
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src={instagramIcon} alt="Instagram" />
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <img src={linkedinIcon} alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/jayanikalansooriya24" target="_blank" rel="noopener noreferrer">
+        <img src={githubIcon} alt="GitHub" />
+      </a>
+      <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+        <img src={discordIcon} alt="Discord" />
+      </a>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 }
