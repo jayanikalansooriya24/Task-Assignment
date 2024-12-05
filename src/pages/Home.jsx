@@ -115,7 +115,7 @@ tasks efficiently. With its intuitive interface, users can easily organize,
 prioritize, and track their to-dos, ensuring they stay on top of their
 responsibilities. Whether it's work, personal, or recurring tasks, Task Tide helps
 streamline daily activities, offering reminders, progress tracking, and
-customization to suit each user's needs..</p>
+customization to suit each user's needs.</p>
           </div>
          <div> <div className="project-card">
             <br></br> <br></br> <br></br> <br></br>
